@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SKZtagram • Seungmin</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light only"/>
+    <meta name="theme-color" content="#FF4D4D">
+
+    <!--meta tags-->
+    <meta name="description" content="What will you say?"/>
+    <meta property="og:site_name" content="SKZtagram"/>
+    <meta property="og:title" content="SKZtagram • Seungmin"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="What will you say?"/>
+    <meta property="og:image" content="https://skztagram.netlify.app/images/cardlogo.png"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:url" content="https://skztagram.netlify.app/direct/seungmin"/>
+
+    <!--and the bird app bc they just have to be special-->
+    <meta name="twitter:title" content="SKZtagram • Seungmin" />
+    <meta name="twitter:image" content="https://skztagram.netlify.app/images/cardlogo.png">
+    <meta name="twitter:description" content="What will you say?">
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <link rel="canonical" href="https://skztagram.netlify.app/direct/seungmin"/>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://kit.fontawesome.com/24341c8af5.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/script.js"></script>
+</head>
+<body>
+<div id="container">
+    <br>
+    <a href="/index.html" target="_self" style="text-align: left;"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+    <div id="message">
+        <br>
+    <img id="messagepfp" src="/images/Seungmin.png">
+    <p>승민 ✔</p>
+    <p id="smallwhite">Instagram • miniverse.___</p>
+    <p id="smallgrey">You both follow t.leeknowsaurus and 8 others</p>
+    </div>
+
+    
+    <div id="msg-placeholder"></div>
+    
+    
+    <script>
+        $(function(){
+        $("#msg-placeholder").load("/msg.html");
+      });
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+:root{
+    --black:#000000;
+    --blue:#3797F0;
+    --white:#F5F5F5;
+    --grey:#9F9F9F;
+    --darkgrey:#363636;
+}
+html{
+    height:100%;
+    width:100%;
+    font-size:20px;
+}
+body:before{
+    background-attachment: scroll;
+    content: '';
+    display: block;
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    left:0;
+    top:0;
+    transform: scale(1);
+    z-index: -700;
+    background-color: var(--black);
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--white);
+    font-size:1rem;
+    line-height:normal;
+    font-weight:250;
+    background-image: linear-gradient(var(--black), var(--black) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  } 
+
+@-ms-viewport {
+    width: device-width ;
+  }
+/*Text*/
+#smallgrey{
+    display: block;
+    color: var(--grey);
+    font-size: small;
+}
+#smallwhite{
+    display: block;
+    color: var(--white);
+    font-size: small;
+}
+/*INTO THE MAIN STUFF NOW*/
+#container{
+    display:block;
+    width: 350px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+#select{
+    display:inline-flex;
+    float:left;
+    text-align: start;
+    padding-bottom: 15px;
+}
+#selecttxt{
+    display: block; 
+    line-height: 0.5rem;
+}
+#selectpfp{
+    width:100px;
+    height:100px;
+    padding-right:15px
+}
+#message{
+    display:block;
+    text-align: center;
+    padding-bottom: 15px;
+}
+#messagepfp{
+    width:150px;
+    height:150px;
+    padding-bottom:15px
+}
+.outputmessage{
+    display: none;
+    background-color: var(--blue);
+    color:var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    max-width:25vw;
+    height:auto;
+    border-radius: 15px;
+    float:right;
+    text-align:left;
+    padding:15px;
+    margin-bottom: 120px;
+}
+.responsemessage{
+    background-color: var(--darkgrey);
+    color:var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    max-width:25vw;
+    height:auto;
+    border-radius: 15px;
+    float:left;
+    text-align:left;
+    padding:15px;
+}
+.msg{
+    display:block;
+    width:315px;
+    background-color: var(--black);
+    padding:20px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+input{
+    width:70%;
+    border-radius: 50px;
+    padding:12px;
+    resize:vertical;
+    background-color:var(--black);
+    color:var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    background-color: var(--black);
+    color:var(--blue);
+    font-size: medium;
+    border:none
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    display: inherit;
+}
+a:hover{
+    color:var(--blue);
+    transition:0.6s ease
+}
